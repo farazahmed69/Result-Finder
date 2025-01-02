@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result Finder</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+        .input-group {
+            margin-bottom: 10px;
+        }
+        input, button {
+            padding: 5px;
+            margin: 5px;
+        }
+        button {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>Student Result Finder</h2>
+    
+    <!-- Add Student Section -->
+    <div class="input-group">
+        <input type="text" id="name" placeholder="Enter Student Name">
+        <input type="text" id="rollNo" placeholder="Enter Roll Number">
+        <input type="text" id="marks" placeholder="Enter Marks">
+        <button onclick="addStudent()">Add Student</button>
+    </div>
+
+    <!-- Search Section -->
+    <div class="input-group">
+        <input type="text" id="searchInput" placeholder="Enter Name or Roll Number to Search">
+        <button onclick="findStudent()">Search</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
